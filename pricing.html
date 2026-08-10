@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Order &amp; Pricing | Drooly Macaroni</title>
+  <meta name="description" content="Drooly Macaroni prices — creamy baked mac &amp; comforting lasagna in tub or tray sizes. Tub ₱140 / ₱180, Tray ₱650 / ₱800. Order by call or Facebook Messenger." />
+  <meta name="theme-color" content="#E8920C" />
+  <link rel="canonical" href="https://droolymacaroni.com/pricing" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Order &amp; Pricing | Drooly Macaroni" />
+  <meta property="og:description" content="Creamy baked mac &amp; comforting lasagna in tub or tray sizes. Tub ₱140 / ₱180, Tray ₱650 / ₱800." />
+  <meta property="og:site_name" content="Drooly Macaroni" />
+  <meta property="og:locale" content="en_PH" />
+  <meta property="og:image" content="images/bakemac-tray.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Order &amp; Pricing | Drooly Macaroni" />
+  <meta name="twitter:description" content="Creamy baked mac &amp; comforting lasagna in tub or tray sizes. Tub ₱140 / ₱180, Tray ₱650 / ₱800." />
+  <meta name="twitter:image" content="images/bakemac-tray.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured data: offers with real prices (PHP) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Drooly Macaroni Pricing",
+    "itemListElement": [
+      { "@type": "Offer", "position": 1, "itemOffered": { "@type": "Product", "name": "Bakedmac Tub" }, "price": "140", "priceCurrency": "PHP", "url": "https://droolymacaroni.com/pricing" },
+      { "@type": "Offer", "position": 2, "itemOffered": { "@type": "Product", "name": "Bakedmac Tray" }, "price": "650", "priceCurrency": "PHP", "url": "https://droolymacaroni.com/pricing" },
+      { "@type": "Offer", "position": 3, "itemOffered": { "@type": "Product", "name": "Lasagna Tub" }, "price": "180", "priceCurrency": "PHP", "url": "https://droolymacaroni.com/pricing" },
+      { "@type": "Offer", "position": 4, "itemOffered": { "@type": "Product", "name": "Lasagna Tray" }, "price": "800", "priceCurrency": "PHP", "url": "https://droolymacaroni.com/pricing" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Drooly Macaroni home">
+        <img class="brand-logo" src="assets/logo.png" alt="" width="260" height="143" />
+        <span class="brand-name sr-only" data-bind="brandName">Drooly Macaroni</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul class="nav-list" id="nav-list" data-bind="navList"><!-- populated by JS --></ul>
+      </nav>
+
+      <a class="btn btn-primary nav-order" href="index.html#contact" data-bind="orderNavHref" data-bind-text="orderNavLabel">Order Now</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <ul class="mobile-nav-list" id="mobile-nav-list" data-bind="mobileNavList"><!-- populated by JS --></ul>
+      <a class="btn btn-primary mobile-order" href="index.html#contact" data-bind="orderNavHref" data-bind-text="orderNavLabel">Order Now</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Order &amp; Pricing</p>
+        <h1 class="page-title">Choose your size. Keep drooling.</h1>
+        <p class="page-sub">Two signature dishes, two convenient sizes — pick what fits your table and order by call or Facebook Messenger.</p>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title" data-bind="pricingTitle">Order &amp; Pricing</h2>
+          <p class="section-subtitle" data-bind="pricingSubtitle">Two signature dishes, two convenient sizes — choose what fits your table.</p>
+        </header>
+
+        <div class="pricing-grid" id="pricing-grid" data-bind="pricingGrid">
+          <!-- Cards rendered from js/data.js (SITE_DATA.pricing). -->
+        </div>
+
+        <noscript>
+          <div class="pricing-grid">
+            <article class="product-card">
+              <div class="product-media">
+                <img src="images/bakemac-tub.png" alt="Baked macaroni and cheese in a clear takeout tub, creamy golden on top with herb flecks." loading="lazy" />
+                <span class="product-tag">Bakedmac</span>
+              </div>
+              <div class="product-body">
+                <h3>Bakedmac — Tub</h3>
+                <p class="price">₱140</p>
+                <a class="btn btn-primary" href="index.html#contact">Order</a>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-media">
+                <img src="images/bakemac-tray.png" alt="Baked macaroni and cheese in a foil tray, golden bubbly cheese with herb garnish." loading="lazy" />
+                <span class="product-tag">Bakedmac</span>
+              </div>
+              <div class="product-body">
+                <h3>Bakedmac — Tray</h3>
+                <p class="price">₱650</p>
+                <a class="btn btn-primary" href="index.html#contact">Order</a>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-media">
+                <img src="images/lasagna-tub.png" alt="Lasagna in a clear takeout tub with pasta layers, mushrooms and red pepper." loading="lazy" />
+                <span class="product-tag">Lasagna</span>
+              </div>
+              <div class="product-body">
+                <h3>Lasagna — Tub</h3>
+                <p class="price">₱180</p>
+                <a class="btn btn-primary" href="index.html#contact">Order</a>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-media">
+                <img src="images/lasagna-tray.png" alt="Lasagna in a foil tray with layered pasta and red sauce." loading="lazy" />
+                <span class="product-tag">Lasagna</span>
+              </div>
+              <div class="product-body">
+                <h3>Lasagna — Tray</h3>
+                <p class="price">₱800</p>
+                <a class="btn btn-primary" href="index.html#contact">Order</a>
+              </div>
+            </article>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ RESELLERS ============ -->
+    <section class="resellers section section-accent" id="resellers">
+      <div class="container resellers-inner">
+        <div class="resellers-copy">
+          <h2 class="section-title" data-bind="resellerTitle">Want to be a reseller?</h2>
+          <p class="section-subtitle" data-bind="resellerSubtitle">We want you to be part of our progress as we build our little business!</p>
+          <p class="reseller-body" data-bind="resellerBody">Reselling is open to both shop owners and individuals. For inquiries, message our Facebook page — we'd be delighted to give you our resell price on our droolicious product!</p>
+          <div class="reseller-actions">
+            <a class="btn btn-primary" href="index.html#contact" data-bind="resellerPrimaryHref" data-bind-text="resellerPrimaryLabel">Become a Reseller</a>
+            <a class="btn btn-ghost" href="https://m.me/droolymacaroni" data-bind="resellerSecondaryHref" data-bind-text="resellerSecondaryLabel" target="_blank" rel="noopener">Message Us on Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-mascot" src="assets/mascot.png" alt="" aria-hidden="true" />
+        <img class="footer-logo" src="assets/logo.png" alt="" aria-hidden="true" />
+      </div>
+      <nav class="footer-col" aria-label="Footer">
+        <h3 class="footer-heading">Explore</h3>
+        <ul id="footer-nav-list" data-bind="footerNavList"><!-- populated by JS --></ul>
+      </nav>
+      <div class="footer-col footer-location">
+        <h3 class="footer-heading">Find Us</h3>
+        <p class="footer-loc-line">We are located at 005 Marahan 1, Alfonso, Cavite.</p>
+        <p class="footer-loc-line">Nearest landmark: DALI Store (Marahan Branch)</p>
+        <p class="footer-loc-line">Search for <strong>droolymacaroni</strong> on <a href="https://www.google.com/maps/search/?api=1&amp;query=droolymacaroni" target="_blank" rel="noopener">Google Maps</a> or <a href="https://waze.com/ul?q=droolymacaroni" target="_blank" rel="noopener">Waze</a>.</p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; <span id="year">2026</span> <span data-bind="brandName">Drooly Macaroni</span>. <strong data-bind="brandSignature">Keep drooling!</strong></p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile order bar -->
+  <a class="mobile-order-bar" href="index.html#contact" data-bind="orderNavHref">Order Now</a>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

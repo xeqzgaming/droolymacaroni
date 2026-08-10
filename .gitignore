@@ -1,0 +1,14 @@
+# Temp / verification artifacts
+*.png
+!assets/*.png
+!images/*.png
+mob_*.png
+why_*.png
+foot*.png
+brand_*.png
+prod*.png
+card1.png
+full*.png
+about*.png
+*.py
+__pycache__/

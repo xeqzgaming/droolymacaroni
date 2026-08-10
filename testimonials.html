@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Testimonials | Drooly Macaroni</title>
+  <meta name="description" content="Real reviews from Drooly Macaroni customers in Alfonso, Cavite — creamy baked mac & comforting lasagna worth drooling over." />
+  <meta name="theme-color" content="#E8920C" />
+  <link rel="canonical" href="https://droolymacaroni.com/testimonials" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Testimonials | Drooly Macaroni" />
+  <meta property="og:description" content="Real reviews from Drooly Macaroni customers — creamy baked mac & comforting lasagna worth drooling over." />
+  <meta property="og:site_name" content="Drooly Macaroni" />
+  <meta property="og:locale" content="en_PH" />
+  <meta property="og:image" content="images/bakemac-tray.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Testimonials | Drooly Macaroni" />
+  <meta name="twitter:description" content="Real reviews from Drooly Macaroni customers — creamy baked mac & comforting lasagna worth drooling over." />
+  <meta name="twitter:image" content="images/bakemac-tray.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured data: customer reviews -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Drooly Macaroni",
+    "url": "https://droolymacaroni.com",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "4"
+    },
+    "review": [
+      { "@type": "Review", "author": { "@type": "Person", "name": "Kim Racacho" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Best baked mac in town!! Nakakabitin ang isang tub sa sarap! Branch out na sana sa mas malapit samin." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Clarisse Joyce Gener" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "The best baked mac at lasagna!!! Di pa start event namin, ubos na agad!" },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Anna Viela Alano Vidallon-Amparo" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Masarap po 'yung baked macaroni niyo parang 'yung sa Pancake House po. Same taste!" },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Kyle Añonuevo San Diego" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Isa sa pinaka masarap na baked mac mac na natikman ko, hindi tinipid sa lasa, pasok na pasok sa presyo." }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Drooly Macaroni home">
+        <img class="brand-logo" src="assets/logo.png" alt="" width="260" height="143" />
+        <span class="brand-name sr-only" data-bind="brandName">Drooly Macaroni</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul class="nav-list" id="nav-list" data-bind="navList"><!-- populated by JS --></ul>
+      </nav>
+
+      <a class="btn btn-primary nav-order" href="index.html#contact" data-bind="orderNavHref" data-bind-text="orderNavLabel">Order Now</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <ul class="mobile-nav-list" id="mobile-nav-list" data-bind="mobileNavList"><!-- populated by JS --></ul>
+      <a class="btn btn-primary mobile-order" href="index.html#contact" data-bind="orderNavHref" data-bind-text="orderNavLabel">Order Now</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Testimonials</p>
+        <h1 class="page-title" data-bind="testimonialsTitle">Loved by Our Customers</h1>
+        <p class="page-sub" data-bind="testimonialsIntro">We are incredibly grateful for your kind words and positive feedback. Your support fuels our passion and commitment to delivering exceptional food. Thank you for being a valued part of our journey.</p>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <ul class="testimonial-grid" id="testimonial-grid" data-bind="testimonialGrid">
+          <!-- Cards rendered from js/data.js (SITE_DATA.testimonials). -->
+        </ul>
+
+        <noscript>
+          <ul class="testimonial-grid">
+            <li class="testimonial-card">
+              <img class="testimonial-photo" src="testimonial_imgs/t01.jpg" alt="Review from Kim Racacho" loading="lazy" />
+              <div class="testimonial-body">
+                <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="testimonial-quote">“Best baked mac in town!! Nakakabitin ang isang tub sa sarap! Branch out na sana sa mas malapit samin. 🤫”</p>
+                <p class="testimonial-name">Kim Racacho</p>
+                <p class="testimonial-label">Happy Customer</p>
+              </div>
+            </li>
+            <li class="testimonial-card">
+              <img class="testimonial-photo" src="testimonial_imgs/t02.jpg" alt="Review from Clarisse Joyce Gener" loading="lazy" />
+              <div class="testimonial-body">
+                <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="testimonial-quote">“The best baked mac at lasagna!!! Di pa start event namin, ubos na agad!”</p>
+                <p class="testimonial-name">Clarisse Joyce Gener</p>
+                <p class="testimonial-label">Satisfied Customer</p>
+              </div>
+            </li>
+            <li class="testimonial-card">
+              <img class="testimonial-photo" src="testimonial_imgs/t06.jpg" alt="Review from Anna Viela Alano Vidallon-Amparo" loading="lazy" />
+              <div class="testimonial-body">
+                <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="testimonial-quote">“Masarap po 'yung baked macaroni niyo parang 'yung sa Pancake House po. Same taste!”</p>
+                <p class="testimonial-name">Anna Viela Alano Vidallon-Amparo</p>
+                <p class="testimonial-label">Satisfied Customer</p>
+              </div>
+            </li>
+            <li class="testimonial-card">
+              <img class="testimonial-photo" src="testimonial_imgs/t07.jpg" alt="Review from Kyle Añonuevo San Diego" loading="lazy" />
+              <div class="testimonial-body">
+                <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="testimonial-quote">“Isa sa pinaka masarap na baked mac mac na natikman ko, hindi tinipid sa lasa, pasok na pasok sa presyo. Highly recommended para sa cravings nyo.”</p>
+                <p class="testimonial-name">Kyle Añonuevo San Diego</p>
+                <p class="testimonial-label">Satisfied Customer</p>
+              </div>
+            </li>
+          </ul>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="resellers section section-accent">
+      <div class="container resellers-inner">
+        <h2 class="section-title">Tried Drooly? We'd love to hear from you!</h2>
+        <p class="section-subtitle">Order today and let us know what you think — your kind words keep us drooling.</p>
+        <div class="reseller-actions">
+          <a class="btn btn-primary" href="https://m.me/droolymacaroni" target="_blank" rel="noopener">Order Now</a>
+          <a class="btn btn-ghost" href="https://m.me/droolymacaroni" target="_blank" rel="noopener">Message Us on Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-mascot" src="assets/mascot.png" alt="" aria-hidden="true" />
+        <img class="footer-logo" src="assets/logo.png" alt="" aria-hidden="true" />
+      </div>
+      <nav class="footer-col" aria-label="Footer">
+        <h3 class="footer-heading">Explore</h3>
+        <ul id="footer-nav-list" data-bind="footerNavList"><!-- populated by JS --></ul>
+      </nav>
+      <div class="footer-col footer-location">
+        <h3 class="footer-heading">Find Us</h3>
+        <p class="footer-loc-line">We are located at 005 Marahan 1, Alfonso, Cavite.</p>
+        <p class="footer-loc-line">Nearest landmark: DALI Store (Marahan Branch)</p>
+        <p class="footer-loc-line">Search for <strong>droolymacaroni</strong> on <a href="https://www.google.com/maps/search/?api=1&amp;query=droolymacaroni" target="_blank" rel="noopener">Google Maps</a> or <a href="https://waze.com/ul?q=droolymacaroni" target="_blank" rel="noopener">Waze</a>.</p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; <span id="year">2026</span> <span data-bind="brandName">Drooly Macaroni</span>. <strong data-bind="brandSignature">Keep drooling!</strong></p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile order bar -->
+  <a class="mobile-order-bar" href="index.html#contact" data-bind="orderNavHref">Order Now</a>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
