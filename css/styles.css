@@ -221,8 +221,9 @@ h1, h2, h3, p { margin: 0; }
   font-weight: 700; font-size: .82rem; padding: 7px 14px; border-radius: 999px; box-shadow: var(--shadow-sm); z-index: 2;
 }
 .product-body { padding: 18px 26px 30px; display: flex; flex-direction: column; gap: 10px; flex: 1; background: transparent; }
-.product-body h3 { font-size: 1.7rem; font-weight: 800; color: var(--brown); font-family: "Trebuchet MS", var(--font); }
-.price { font-size: 1.6rem; font-weight: 800; color: var(--cheese-deep); }
+.product-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.product-body h3 { font-size: 1.7rem; font-weight: 800; color: var(--brown); font-family: "Trebuchet MS", var(--font); margin: 0; }
+.price { font-size: 1.6rem; font-weight: 800; color: var(--cheese-deep); white-space: nowrap; }
 .product-body p { color: var(--ink-soft); font-size: 1.08rem; flex: 1; }
 
 /* ---------- Why Drooly ---------- */

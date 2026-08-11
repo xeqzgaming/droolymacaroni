@@ -152,19 +152,24 @@
 
       var body = document.createElement("div");
       body.className = "product-body";
+
+      var head = document.createElement("div");
+      head.className = "product-head";
       var h3 = document.createElement("h3");
       h3.textContent = it.product + " — " + it.size;
-      var price = document.createElement("p");
+      var price = document.createElement("span");
       price.className = "price";
       price.textContent = it.price;
+      head.appendChild(h3);
+      head.appendChild(price);
+
       var cta = document.createElement("a");
       cta.className = "btn btn-primary";
       cta.href = D.orderNavHref;
       cta.textContent = "Order";
       cta.target = "_blank";
       cta.rel = "noopener";
-      body.appendChild(h3);
-      body.appendChild(price);
+      body.appendChild(head);
       body.appendChild(cta);
 
       card.appendChild(media);
