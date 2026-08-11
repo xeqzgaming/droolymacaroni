@@ -23,8 +23,8 @@ const SITE_DATA = {
   // ----- Contact / ordering -----
   contact: {
     // Real phone number from the existing website.
-    phoneDisplay: "0955-247-8702",
-    phoneTel: "09552478702", // used in tel: links
+    phoneDisplay: "09914627015",
+    phoneTel: "09914627015", // used in tel: links
     // Real Facebook Messenger link from the existing site.
     facebookUrl: "https://m.me/droolymacaroni",
     facebookLabel: "Message Us on Facebook",
