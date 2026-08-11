@@ -201,15 +201,18 @@ h1, h2, h3, p { margin: 0; }
   align-items: start;
 }
 .product-card {
-  background: var(--paper); border-radius: var(--radius-lg); overflow: hidden;
+  border-radius: var(--radius-lg); overflow: hidden;
   box-shadow: var(--shadow-md); border: 1px solid rgba(110,66,38,.08);
   display: flex; flex-direction: column;
+  background: linear-gradient(180deg, var(--cheese) 0%, #F8D976 55%, var(--cream-2) 100%);
   transition: transform .25s var(--ease), box-shadow .25s var(--ease);
 }
 .product-card:hover, .product-card:focus-within { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-.product-media { position: relative; overflow: hidden; aspect-ratio: 4/3; background: var(--cheese); padding: 22px; }
+.product-media { position: relative; overflow: hidden; background: transparent; padding: 18px 18px 4px; }
 .product-media img {
-  width: 100%; height: 100%; object-fit: contain;
+  display: block; width: 100%; height: auto; object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(110,66,38,.14);
   transition: transform .5s var(--ease);
 }
 .product-card:hover .product-media img { transform: scale(1.05); }
@@ -217,7 +220,7 @@ h1, h2, h3, p { margin: 0; }
   position: absolute; top: 16px; left: 16px; background: var(--tomato); color: #fff;
   font-weight: 700; font-size: .82rem; padding: 7px 14px; border-radius: 999px; box-shadow: var(--shadow-sm); z-index: 2;
 }
-.product-body { padding: 24px 26px 30px; display: flex; flex-direction: column; gap: 10px; flex: 1; background: #fff; }
+.product-body { padding: 18px 26px 30px; display: flex; flex-direction: column; gap: 10px; flex: 1; background: transparent; }
 .product-body h3 { font-size: 1.7rem; font-weight: 800; color: var(--brown); font-family: "Trebuchet MS", var(--font); }
 .price { font-size: 1.6rem; font-weight: 800; color: var(--cheese-deep); }
 .product-body p { color: var(--ink-soft); font-size: 1.08rem; flex: 1; }
