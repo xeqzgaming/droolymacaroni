@@ -2,6 +2,7 @@
 *.png
 !assets/*.png
 !images/*.png
+!images/testi/*.png
 mob_*.png
 why_*.png
 foot*.png

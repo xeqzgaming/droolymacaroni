@@ -227,33 +227,9 @@
       img.src = it.image;
       img.alt = "Review from " + it.name;
       img.loading = "lazy";
+      img.decoding = "async";
       li.appendChild(img);
 
-      var body = document.createElement("div");
-      body.className = "testimonial-body";
-
-      var stars = document.createElement("div");
-      stars.className = "testimonial-stars";
-      stars.setAttribute("aria-label", "5 out of 5 stars");
-      stars.textContent = "★★★★★";
-      body.appendChild(stars);
-
-      var q = document.createElement("p");
-      q.className = "testimonial-quote";
-      q.textContent = "“" + it.quote + "”";
-      body.appendChild(q);
-
-      var name = document.createElement("p");
-      name.className = "testimonial-name";
-      name.textContent = it.name;
-      body.appendChild(name);
-
-      var label = document.createElement("p");
-      label.className = "testimonial-label";
-      label.textContent = it.label;
-      body.appendChild(label);
-
-      li.appendChild(body);
       grid.appendChild(li);
     });
   }
