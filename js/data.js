@@ -139,8 +139,8 @@ const SITE_DATA = {
   // ----- About Us -----
   about: {
     title: "From Our Family Kitchen to Yours.",
-    image: "images/bakemac-tray-new.png",
-    imageAlt: "Drooly Macaroni's homemade baked macaroni fresh from the oven.",
+    image: "images/about-us.png",
+    imageAlt: "Drooly Macaroni mascot — from original sketch to artistic interpretation by Kien Perea.",
     paragraphs: [
       "It all started with a simple craving for something warm and comforting. With a dash of inspiration and a sprinkle of creativity, my mom whipped up her signature baked macaroni and cheese — a dish that soon became the cornerstone of our family gatherings and the talk of our neighborhood.",
       "Word of mouth spread like wildfire as friends and neighbors couldn't resist the creamy, cheesy goodness that came out of our kitchen. Soon, requests for trays poured in, and before we knew it, we found ourselves unofficially catering local events and gatherings.",

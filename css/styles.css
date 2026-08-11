@@ -273,6 +273,10 @@ h1, h2, h3, p { margin: 0; }
   width: 100%; max-width: 380px; height: auto;
   border-radius: 18px;
 }
+.about-graphic {
+  width: 100%; max-width: 560px; height: auto;
+  border-radius: 18px; box-shadow: var(--shadow-sm);
+}
 .about-copy .section-title { text-align: left; margin-bottom: 18px; }
 .about-copy p { color: var(--ink-soft); margin-bottom: 14px; font-size: 1.06rem; }
 
