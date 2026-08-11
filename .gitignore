@@ -12,3 +12,7 @@ card1.png
 full*.png
 *.py
 __pycache__/
+
+# Stray exports
+*.zip
+FAQS.zip
