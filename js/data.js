@@ -58,14 +58,14 @@ const SITE_DATA = {
       {
         name: "Bakedmac",
         description: "Creamy, cheesy baked macaroni.",
-        image: "images/bakemac-tray.png",
+        image: "images/bakemac-tray-new.png",
         imageAlt: "Drooly Macaroni baked mac — creamy cheesy pasta with golden top, baked in a foil tray.",
         cta: { label: "Order Bakedmac", href: "#contact" },
       },
       {
         name: "Lasagna",
         description: "Rich, comforting layered lasagna.",
-        image: "images/lasagna-tray.png",
+        image: "images/lasagna-tray-new.png",
         imageAlt: "Drooly Macaroni lasagna — layered pasta with red sauce and melted cheese, in a foil tray.",
         cta: { label: "Order Lasagna", href: "#contact" },
       },
@@ -80,28 +80,28 @@ const SITE_DATA = {
       {
         product: "Bakedmac",
         size: "Tub",
-        image: "images/bakemac-tub.png",
+        image: "images/bakemac-tub-new.png",
         imageAlt: "Baked macaroni and cheese in a clear takeout tub, creamy golden on top with herb flecks.",
         price: "₱140",
       },
       {
         product: "Bakedmac",
         size: "Tray",
-        image: "images/bakemac-tray.png",
+        image: "images/bakemac-tray-new.png",
         imageAlt: "Baked macaroni and cheese in a foil tray, golden bubbly cheese with herb garnish.",
         price: "₱800",
       },
       {
         product: "Lasagna",
         size: "Tub",
-        image: "images/lasagna-tub.png",
+        image: "images/lasagna-tub-new.png",
         imageAlt: "Lasagna in a clear takeout tub with pasta layers, mushrooms and red pepper.",
         price: "₱160",
       },
       {
         product: "Lasagna",
         size: "Tray",
-        image: "images/lasagna-tray.png",
+        image: "images/lasagna-tray-new.png",
         imageAlt: "Lasagna in a foil tray — layered pasta with red sauce and melted cheese.",
         price: "₱1200",
       },
@@ -139,7 +139,7 @@ const SITE_DATA = {
   // ----- About Us -----
   about: {
     title: "From Our Family Kitchen to Yours.",
-    image: "images/bakemac-tray.png",
+    image: "images/bakemac-tray-new.png",
     imageAlt: "Drooly Macaroni's homemade baked macaroni fresh from the oven.",
     paragraphs: [
       "It all started with a simple craving for something warm and comforting. With a dash of inspiration and a sprinkle of creativity, my mom whipped up her signature baked macaroni and cheese — a dish that soon became the cornerstone of our family gatherings and the talk of our neighborhood.",
