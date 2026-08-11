@@ -159,8 +159,10 @@
       price.textContent = it.price;
       var cta = document.createElement("a");
       cta.className = "btn btn-primary";
-      cta.href = "#contact";
+      cta.href = D.orderNavHref;
       cta.textContent = "Order";
+      cta.target = "_blank";
+      cta.rel = "noopener";
       body.appendChild(h3);
       body.appendChild(price);
       body.appendChild(cta);

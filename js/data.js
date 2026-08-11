@@ -89,21 +89,21 @@ const SITE_DATA = {
         size: "Tray",
         image: "images/bakemac-tray.png",
         imageAlt: "Baked macaroni and cheese in a foil tray, golden bubbly cheese with herb garnish.",
-        price: "₱650",
+        price: "₱800",
       },
       {
         product: "Lasagna",
         size: "Tub",
         image: "images/lasagna-tub.png",
         imageAlt: "Lasagna in a clear takeout tub with pasta layers, mushrooms and red pepper.",
-        price: "₱180",
+        price: "₱160",
       },
       {
         product: "Lasagna",
         size: "Tray",
         image: "images/lasagna-tray.png",
         imageAlt: "Lasagna in a foil tray — layered pasta with red sauce and melted cheese.",
-        price: "₱800",
+        price: "₱1200",
       },
     ],
   },
@@ -149,12 +149,12 @@ const SITE_DATA = {
     ],
   },
 
-  // ----- Resellers -----
+  // ----- Partners -----
   reseller: {
-    title: "Want to be a reseller?",
+    title: "Want to be a partner?",
     subtitle: "We want you to be part of our progress as we build our little business!",
-    body: "Reselling is open to both shop owners and individuals. For inquiries, message our Facebook page — we'd be delighted to give you our resell price on our droolicious product!",
-    primaryCta: { label: "Become a Reseller", href: "index.html#contact" },
+    body: "Partnering is open to both shop owners and individuals. For inquiries, message our Facebook page — we'd be delighted to give you our partner price on our droolicious product!",
+    primaryCta: { label: "Become a Partner", href: "https://m.me/droolymacaroni" },
     secondaryCta: { label: "Message Us on Facebook", href: "https://m.me/droolymacaroni" },
   },
 

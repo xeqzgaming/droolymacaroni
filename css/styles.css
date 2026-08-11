@@ -10,10 +10,10 @@
   --paper:        #FFFFFF;
   --ink:          #2E1C0E;
   --ink-soft:     #5A4332;
-  --cheese:       #F6B93B;
+  --cheese:       #FFDE20;
   --cheese-deep:  #E8920C;
-  --tomato:       #C0392B;
-  --tomato-deep:  #9B2D20;
+  --tomato:       #E07B00;
+  --tomato-deep:  #A85A00;
   --brown:        #6B4226;
   --shadow-sm:    0 2px 8px rgba(110, 66, 38, 0.10);
   --shadow-md:    0 10px 30px rgba(110, 66, 38, 0.14);
@@ -131,8 +131,8 @@ h1, h2, h3, p { margin: 0; }
 .section-alt { background: var(--cream-2); }
 .section-accent {
   background:
-    radial-gradient(1200px 400px at 80% -10%, rgba(246,185,59,.35), transparent 60%),
-    linear-gradient(180deg, var(--cheese) 0%, var(--cheese-deep) 100%);
+    radial-gradient(1200px 400px at 80% -10%, rgba(255,222,32,.28), transparent 60%),
+    linear-gradient(180deg, var(--cheese-deep) 0%, #C8770A 100%);
   color: #fff;
 }
 .section-head { text-align: center; max-width: 720px; margin: 0 auto 52px; }
@@ -159,7 +159,7 @@ h1, h2, h3, p { margin: 0; }
 }
 .eyebrow {
   display: inline-block; font-weight: 700; color: var(--tomato);
-  background: rgba(192,57,43,.10); padding: 7px 14px; border-radius: 999px;
+  background: rgba(224,123,0,.12); padding: 7px 14px; border-radius: 999px;
   font-size: .9rem; letter-spacing: .02em; margin-bottom: 18px;
 }
 .hero-title {
@@ -247,11 +247,11 @@ h1, h2, h3, p { margin: 0; }
 .why-item p { color: var(--ink-soft); font-size: 1rem; line-height: 1.6; margin-top: 2px; }
 .why-item div { min-width: 0; }
 
-/* per-card brand accent colors (mirrors the mockup: pink, orange, purple, yellow) */
-.why-accent-heart { --why-accent: #d6395f; }
-.why-accent-flame { --why-accent: #e6731f; }
-.why-accent-users { --why-accent: #7a4fc0; }
-.why-accent-star  { --why-accent: #d99e16; }
+/* per-card brand accent colors — all cheese/yellow family (gold, amber, bronze) */
+.why-accent-heart { --why-accent: #F2B705; }
+.why-accent-flame { --why-accent: #E8920C; }
+.why-accent-users { --why-accent: #D98300; }
+.why-accent-star  { --why-accent: #C2700A; }
 
 /* ---------- About (single mascot) ---------- */
 .about-inner { display: grid; gap: 40px; grid-template-columns: 1fr; align-items: center; }
@@ -297,8 +297,8 @@ h1, h2, h3, p { margin: 0; }
   width: 46px; height: 46px; border-radius: 50%; flex: 0 0 auto;
 }
 .contact-pill-icon svg { width: 22px; height: 22px; }
-.contact-pill-icon--phone { background: #FCE0EC; color: #D63384; }
-.contact-pill-icon--chat { background: #ECE4FB; color: #7C4DD6; }
+.contact-pill-icon--phone { background: #FCEFCB; color: #C2700A; }
+.contact-pill-icon--chat { background: #FBE9B0; color: #E8920C; }
 .contact-pill-label { display: block; font-size: .82rem; color: var(--ink-soft); }
 .contact-pill-value { display: block; font-weight: 800; color: var(--brown); font-size: 1.18rem; }
 
@@ -328,8 +328,7 @@ h1, h2, h3, p { margin: 0; }
   padding: 56px 22px 40px;
 }
 .footer-brand { position: relative; display: flex; align-items: flex-end; gap: 0; }
-.footer-mascot { width: 98px; height: auto; position: relative; z-index: 1; }
-.footer-logo { width: 206px; height: auto; margin-left: -10px; position: relative; z-index: 2; }
+.footer-logo { width: 240px; height: auto; }
 .footer-col { text-align: left; }
 .footer-heading {
   font-size: .82rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
@@ -350,8 +349,8 @@ h1, h2, h3, p { margin: 0; }
   width: 38px; height: 38px; border-radius: 50%; flex: 0 0 auto;
 }
 .footer-link-icon svg { width: 18px; height: 18px; }
-.footer-link-icon--phone { background: #FCE0EC; color: #D63384; }
-.footer-link-icon--chat { background: #ECE4FB; color: #7C4DD6; }
+.footer-link-icon--phone { background: #FCEFCB; color: #C2700A; }
+.footer-link-icon--chat { background: #FBE9B0; color: #E8920C; }
 .footer-link-label { display: block; font-size: .78rem; font-weight: 600; color: rgba(252,234,210,.75); }
 .footer-link-value { display: block; font-size: 1rem; font-weight: 800; color: #fff; }
 .footer-location { max-width: 26em; }
@@ -419,7 +418,7 @@ h1, h2, h3, p { margin: 0; }
 }
 .page-hero .eyebrow {
   display: inline-block; font-weight: 700; color: var(--tomato);
-  background: rgba(192,57,43,.10); padding: 7px 14px; border-radius: 999px;
+  background: rgba(224,123,0,.12); padding: 7px 14px; border-radius: 999px;
   font-size: .9rem; letter-spacing: .02em; margin-bottom: 14px;
 }
 .page-title {
@@ -436,10 +435,10 @@ h1, h2, h3, p { margin: 0; }
 }
 
 
-/* ---------- Brand logo (wordmark from images/logo.png) ---------- */
-.brand-logo { height: 38px; width: auto; display: block; }
+/* ---------- Brand logo (combined mascot + wordmark) ---------- */
+.brand-logo { width: 190px; height: auto; display: block; }
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
-@media (min-width: 480px) { .brand-logo { height: 44px; } }
+@media (min-width: 480px) { .brand-logo { width: 215px; } }
