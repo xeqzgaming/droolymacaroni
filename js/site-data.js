@@ -40,7 +40,7 @@ const SITE_DATA = {
       "Made with love, packed with cheesy goodness, and created to make every bite worth drooling over.",
     primaryCta: { label: "Order Now", href: "https://m.me/droolymacaroni" },
     secondaryCta: { label: "Explore Our Products", href: "#products" },
-    image: "images/main-image.jpg",
+    image: "images/main-image-v2.jpg",
     imageAlt: "Drooly Macaroni baked macaroni and cheese in a foil tray, golden and bubbly.",
     badges: [
       "Family recipe",
