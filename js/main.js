@@ -68,6 +68,9 @@
     if (!ul) return;
     var here = location.pathname.split("/").pop() || "index.html";
     var hash = (location.hash || "").replace(/^#/, "");
+    // On a sub-page (e.g. pricing.html), if the URL has a hash, only the
+    // nav item whose hash matches should be highlighted — not the bare file link.
+    var wantHash = (here !== "index.html" && hash !== "");
     ul.querySelectorAll("a").forEach(function (a) {
       var parts = (a.getAttribute("href") || "").split("#");
       var file = parts[0] || "index.html";
@@ -77,8 +80,10 @@
         if (here === "index.html") {
           if (section && section === hash) active = true;
           else if (!section && (hash === "" || hash === "home" || hash === "top")) active = true;
+        } else if (wantHash) {
+          active = (section !== "" && section === hash);
         } else {
-          active = (section === "" || section === hash);
+          active = (section === "");
         }
       }
       if (active) a.setAttribute("aria-current", "page");

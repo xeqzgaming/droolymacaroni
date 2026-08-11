@@ -229,6 +229,7 @@ const SITE_DATA = {
     { label: "About Us", href: "index.html#about" },
     { label: "Our Products", href: "index.html#products" },
     { label: "Pricing", href: "pricing.html" },
+    { label: "FAQ", href: "pricing.html#faq" },
     { label: "Testimonials", href: "testimonials.html" },
     { label: "Contact", href: "index.html#contact" },
   ],
