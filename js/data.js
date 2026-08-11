@@ -227,9 +227,9 @@ const SITE_DATA = {
   // ----- Navigation (cross-page links) -----
   nav: [
     { label: "Home", href: "index.html" },
+    { label: "About Us", href: "index.html#about" },
     { label: "Our Products", href: "index.html#products" },
     { label: "Pricing", href: "pricing.html" },
-    { label: "About Us", href: "index.html#about" },
     { label: "Contact", href: "index.html#contact" },
   ],
   orderNavLabel: "Order Now",
